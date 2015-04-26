@@ -1,16 +1,16 @@
 # Hermes
-Generate dummy data, or mask sensitive data with dummy.
+Mask sensitive data with dummy.
 
 # Usage
 
 ## Install
 
-Clone and install with pip.
+Clone and install faker with pip.
 
 ```bash
 $ git clone https://github.com/ohbarye/Hermes
 $ cd Hermes
-$ pip install -r packages_requirements.txt
+$ pip install git+https://github.com/joke2k/faker.git # The latest faker is not released PyPI
 ```
 
 ## Mask data
@@ -47,15 +47,16 @@ The above sample generate the following result: `out.csv`.
 
 ```csv
 id,name,age,hire_date,phone_number,address,e-mail
-1,渡辺 明美,19,1985-11-08,070-5797-2830,53 西之園 Street 21741 香織 Ville,animix@example.org
-2,中島 裕樹,2,2015-04-09,090-3448-3624,07 山田 Street 73882 裕美子 Ville,ea.@example.net
-3,石田 充,92,1995-01-15,090-5354-4606,78 大垣 Street 85516 さゆり Ville,rerum.@example.org
+1,杉山 和也,99,2004-10-04,73-7004-3804,青森県日野市独鈷沢15丁目2番6号 パーク九段南823,sequiy@example.org
+2,山田 裕美子,54,1988-12-08,48-8365-9175,長崎県西多摩郡檜原村細竹15丁目25番16号 ハイツ日光446,qui84@example.com
+3,宇野 香織,22,1973-03-09,30-8595-4194,愛知県北区三ノ輪22丁目6番15号 前弥六パーク361,veroy@example.net
 
 ```
 
 ## Extend
 
-If you want to mask data by other location style.Arrange `env.py`'s `lacation` property.
+* If you want to mask data by other location style. Arrange `env.py`'s `location`. e.g. `en_US`: English(United States), `it_IT` Italian, and so on. More information, see https://github.com/joke2k/faker#localization.
+* There is no header row in csv, then modify `env.py`'s `skip_header` to `False`.
 
 # License
 
@@ -64,5 +65,4 @@ MIT
 
 ## TODO
 
-* format address
 * generate frees style dummy data
