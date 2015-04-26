@@ -1,16 +1,13 @@
 from dummy_generator import DummyGenerator
+import env
 
 def main():
 
-    rules    = "test_data/rules.json"
-    in_file  = "test_data/in.csv"
-    out_file = "test_data/out.csv"
+    dg = DummyGenerator(env.rules)
 
-    dummy = DummyGenerator(rules)
+    masked_data = dg.mask(env.in_file)
 
-    replaced_data = dummy.mask(in_file)
-
-    dummy.write_csv(out_file,replaced_data)
+    dg.write_csv(env.out_file,masked_data)
 
 if __name__ == "__main__":
     main()

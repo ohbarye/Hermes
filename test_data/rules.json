@@ -1,4 +1,8 @@
 {
     "1": "name",
-    "2": "date"
+    "2": "age",
+    "3": "date",
+    "4": "phone_number",
+    "5": "address",
+    "6": "email"
 }

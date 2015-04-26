@@ -1,3 +1,4 @@
-1,坂本 治,1976-07-26,09-0000-0002
-2,喜嶋 零,1992-08-24,039-0000-0002
-3,高橋 あすか,1974-06-05,092-0000-0002
+id,name,age,hire_date,phone_number,address,e-mail
+1,渡辺 明美,19,1985-11-08,070-5797-2830,53 西之園 Street 21741 香織 Ville,animix@example.org
+2,中島 裕樹,2,2015-04-09,090-3448-3624,07 山田 Street 73882 裕美子 Ville,ea.@example.net
+3,石田 充,92,1995-01-15,090-5354-4606,78 大垣 Street 85516 さゆり Ville,rerum.@example.org

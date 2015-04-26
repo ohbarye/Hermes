@@ -1,3 +1,4 @@
-1,Tormas,1977/9/21,09-0000-0002
-2,Yonaus,1990/2/26,039-0000-0002
-3,Hermes,1982/5/21,092-0000-0002
+id,name,age,hire_date,phone_number,address,e-mail
+1,Tormas,25,1977/9/21,09-0000-0002,Ireland,tormas@te.te
+2,Yonaus,3,1990/2/26,039-0000-0002,神奈川県,yonaus@te.te
+3,Hermes,44,1982/5/21,092-0000-0002,東京,hermes@te.te
