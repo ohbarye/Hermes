@@ -30,7 +30,7 @@ To mask data, prepare 2 files.
 
 1. **rules.json**
 
-    The rules how to mask data. It's written in JSON.
+    The rules how to mask data. It's written in JSON. The `Key` means *column number* (it starts from 0), and the `value` does *data type*.
 
     ```json
     {
