@@ -5,7 +5,7 @@ Mask sensitive data with dummy.
 
 ## Install
 
-Clone and install faker with pip.
+First, `git clone` and `pip install`.
 
 ```bash
 $ git clone https://github.com/ohbarye/Hermes
@@ -19,7 +19,7 @@ To mask data, prepare 2 files.
 
 1. **in.csv**
 
-    CSV data to mask. Any name is OK, but don't forget arrange `env.py`'s `in_file`.
+    It's CSV data to mask. Any name is OK, but don't forget edit `env.py`'s `in_file`.
 
     ```csv
     id,name,age,hire_date,phone_number,address,e-mail
@@ -43,7 +43,7 @@ To mask data, prepare 2 files.
     }
     ```
 
-The above sample generate the following result: `out.csv`.
+The above sample generates the following result: `out.csv`.
 
 ```csv
 id,name,age,hire_date,phone_number,address,e-mail
@@ -55,8 +55,11 @@ id,name,age,hire_date,phone_number,address,e-mail
 
 ## Extend
 
-* If you want to mask data by other location style. Arrange `env.py`'s `location`. e.g. `en_US`: English(United States), `it_IT` Italian, and so on. More information, see https://github.com/joke2k/faker#localization.
-* There is no header row in csv, then modify `env.py`'s `skip_header` to `False`.
+* If you want to mask data by other location style.Edit `env.py`'s `location`. e.g. `en_US`: English(United States), `it_IT`: Italian, and so on.
+
+* If there is no header row in `in.csv`, then edit `env.py`'s `skip_header` to `False`.
+
+* This tool depends heavily on **faker** for data generation. For more information, refer to https://github.com/joke2k/faker.
 
 # License
 
@@ -66,3 +69,4 @@ MIT
 ## TODO
 
 * generate frees style dummy data
+* skip any row
