@@ -10,7 +10,7 @@ First, `git clone` and `pip install`.
 ```bash
 $ git clone https://github.com/ohbarye/Hermes
 $ cd Hermes
-$ pip install git+https://github.com/joke2k/faker.git # The latest faker is not released PyPI
+$ pip install fake-factory
 ```
 
 ## Mask data
